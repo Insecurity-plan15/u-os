@@ -1,0 +1,17 @@
+#ifndef __CSTRING
+#define __CSTRING
+
+#ifndef __size_t_defined
+#include <libc/util/size_t.hpp>
+#endif
+
+char *strcpy(char *dest, const char *str);
+char *strncpy(char *dest, const char *str, size_t count);
+size_t strlen(const char *str);
+
+void *memset(void *dest, int ch, size_t count);
+void *memcpy(void *dest, const void *src, size_t count);
+
+#endif
+
+// vim: set ft=cpp:
